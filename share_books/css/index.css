@@ -1,0 +1,53 @@
+.leftBox{
+    background-color: #1A2930;
+    color: white;
+    height: 100vh;
+}
+.leftBox h1{
+    position: absolute;
+    width: 50%;
+    font-size: 3rem;
+    width: 200px;
+    margin: 20px 0 0 20px;
+}
+.searchBox{
+    background-color: #FAD65B;
+    height: 50vh;
+    text-align: center;
+}
+.memberBox{
+    text-align: center;
+    background-color:#CECDCB ;
+    height: 50vh;
+}
+img{
+    width: 180px;
+    margin-top: 8%;
+}
+.memberBox img{
+    filter: contrast(0.7);
+}
+.searchBox a,
+.memberBox p{
+    display: block;
+    width: 250px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 40px;
+    border: 3px solid white;
+    height: 3.8rem;
+    line-height: 3.5rem;
+    cursor: pointer;
+}
+.searchBox a:hover{
+    color:#1A2930 ;
+    border: 3px solid #1A2930;
+    text-decoration: none;
+}
+.memberBox p:hover{
+    color:#80CBC4 ;
+    border: 3px solid #80CBC4;
+}
+

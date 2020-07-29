@@ -1,0 +1,247 @@
+*,
+*::after
+,*::before{
+    box-sizing: border-box;  
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: Microsoft JhengHei ;
+    color: #1A2930;
+    /* 去除modal彈出時畫面抖動的問題 */
+    /* padding-right: 0 !important; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+.container{
+    flex: 1;
+}
+.hr_line{
+    height: 3px;
+    background-color:#1A2930 ;
+    margin: 15px 0;
+}
+/* 按鈕樣式 */
+.btn{
+    font-weight: 600;
+}
+.btn_yellow{
+    background-color: #FAD65B;
+}
+.btn_green{
+    background-color: #80CBC4;
+}
+.btn_green:hover{
+   background-color: #1A2930;
+   color: white;
+}
+.btn_blue{
+    background-color: #1A2930;
+    color: white;
+}
+.btn_red{
+    background-color: #E86290;
+}
+.btn_blue:hover{  
+   color: #1A2930;
+   background-color: #80CBC4;
+
+}
+select,option{
+    width: 70%;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.mysearch{
+    width: 70%;
+    display: inline-block;
+}
+/* form樣式 */
+#preview_b_img{
+    width: 200px;
+}
+
+form .form-group label{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* navBar 樣式 */
+nav{
+    background-color: #FAD65B;
+
+}
+nav>a:first-of-type{
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    color:#1A2930 ;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+
+}
+nav>a:first-of-type:hover{
+    color: white;    
+}
+
+a{
+    color:white ;
+    transition: all 0.5s;
+}
+ul a:hover{
+    color:#1A2930 ;
+    font-weight: 600;
+    border-bottom: 2px solid #1A2930 ;
+}
+.active{
+    color:#1A2930 ;
+    font-weight: 600;
+    border-bottom: 2px solid #1A2930 ;
+    
+}
+nav ul li{
+    margin: 0 20px;
+}
+span.icon{
+    background-image: url('../img/books_icon.png');
+}
+.loginBtn{
+    display: flex;
+    align-items: center;
+}
+.loginBtn li:nth-of-type(1){
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+   nav{
+       height: initial;
+   }
+}
+
+/* book_card (small) */
+
+.book_card{
+    background-color:#1A2930 ;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+}
+
+.book_card p{
+    margin-bottom: 10px;
+}
+.card_Title{
+    display: flex;
+    justify-content: space-around;
+}
+.card_Title>div:nth-of-type(1){
+    width: 100px;
+    margin-right: 10px;
+}
+.card_Title img{
+    width: 100%;
+}
+.card_Title p{
+   font-size: 1.1rem;
+}
+.card_Title p span{
+    font-size: 1rem;
+    display: inline-block;
+    width: 70px;
+    background-color: cadetblue;
+    padding: 2px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.card_Title_s{
+    margin-top: 20px;
+    text-align: right; 
+}
+.card_Title_s p{
+    font-size: 1rem;  
+}
+@media screen and (min-width: 960px){
+    .book_card{
+        max-width: 30%;
+    }
+}
+
+/* 登入視窗 */
+.loginBox{
+    background: rgba(40, 55, 71 , 0.8);
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;  
+    z-index: 10;
+}
+.loginBox form{
+    margin: auto;
+    color: white;
+}
+.loginBox input{
+    margin-top: 10px;
+}
+.loginBox button{
+    width: 40%;
+}
+.loginBox .form-group{
+    text-align: left;
+}
+.icon_close{
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.btn_group{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.apcheck{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.toast{
+    position: absolute;
+    top: 50px;
+    right: 40vw;
+    min-height: 110px;
+    font-size: 1.2rem;
+    width: 50vw;
+    background-color: #80CBC4;
+    font-weight: 600;
+    text-align: center;
+    pointer-events: all;
+    z-index: 1;
+    
+}
+
+footer{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 50px;
+    background-color:#6b807d;
+
+}

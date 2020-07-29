@@ -1,0 +1,188 @@
+body{
+    background-color: #CECDCB;
+}
+header{
+    margin:20px 0;
+}
+.myselect{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.myselect span{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    border-bottom: 2px solid #1A2930;
+}
+section{
+    justify-content: start;
+}
+.book_card:hover{
+    cursor: pointer;
+    color: #1A2930;
+    background-color: #FAD65B;
+    transform: scale(1.05);
+    /* transition: all 0.5s ease-in-out; */
+}
+
+/* card detail */
+.icon_close{
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 99;
+}
+
+.card_detail{
+    background-color: #1A2930;
+    border-radius: 5px;
+    padding: 3%;
+    margin: auto;
+    border: 3px white solid;
+    /*可點到下層的東西*/
+    pointer-events: all;
+}
+.card_detail p{
+    margin-bottom: 20px;
+}
+.modal-dialog{
+    max-width: 70%;
+}
+.card_img {
+    border-right: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.card_img button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 90%;
+    margin-top: 20px;
+    /* transition: all .4s ease ; */
+}
+.card_img button:hover{
+   background-color:#FAD65B ;
+   color: #1A2930;
+   
+}
+.card_img img{
+    width: 90%;
+    object-fit: contain;
+}
+.card_main{
+    color: white;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card_main p{
+    font-size: 1.4rem;
+    display: inline-block;
+    
+}
+.card_main span{
+    font-size: 1rem;
+    width: 130px;
+    display: inline-block;
+    background-color: #FAD65B;
+    color: white;
+    line-height: 2rem;
+    border-radius: 3px;
+    margin-right: 5%;
+    text-align: center;
+    color: #1A2930;
+}
+.c_right{
+    flex-direction: column;
+    width: 60%;
+}
+.card_Title>div:nth-of-type(1).card_Title_s{
+    width: auto;
+}
+
+
+@media screen and (max-width: 768px){
+    .mysearch{
+        width: 50%;
+        margin: auto;
+    }
+    .modal-dialog{
+        max-width: 100%;
+    }
+    .card_detail p{
+        font-size: 1.3rem;
+    }
+    .card_main{
+        margin-top: 20px;
+    }
+}
+
+
+/* changeBox */
+.changeBox{
+    font-weight: 600;
+    background: linear-gradient(to right, #FAD65B 50%, #1A2930 50%);
+    display: flex;
+    min-height: 50vh;
+}
+.changeBox>div{
+    margin-bottom: 10px;
+}
+.changeBox>div:nth-of-type(1){
+    color: #1A2930;
+}
+.changeBox h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;;
+}
+
+label{
+    font-size: 1.2rem;
+    margin: 5px;
+}
+.btnGroup{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.btnGroup button{
+    width: 40%;
+}
+.btnGroup button:nth-of-type(1){
+    background-color: #CECDCB;
+}
+button:nth-of-type(2):hover{
+    background-color:#FAD65B ;
+ }
+.tobook{
+    background-color:#CECDCB ;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 736px){
+    .changeBox{
+        background:#FAD65B;
+    }
+    .textIn{
+        background-color:#1A2930 ;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+}
+.page li{
+    display: inline-block;
+
+}

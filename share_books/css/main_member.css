@@ -1,0 +1,20 @@
+body{
+    background-color: #CECDCB;
+}
+h1{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+hr{
+    border-top: 5px solid #1A2930;
+}
+/* member form style */
+form{
+    margin: auto;
+}
+form .btn{
+    width: 40%;
+    margin: auto;
+    display: block;
+}

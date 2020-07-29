@@ -1,0 +1,193 @@
+select{
+    width: 120px;
+    font-size: 1.2rem;
+}
+.card_Title p span {
+    display: block;
+    margin-bottom: 5px;
+}
+.myImg img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* project style */
+.project{
+    max-width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+}
+.his_p{
+    background-color: rgb(175, 173, 173);
+}
+.card_Title{
+    flex-direction: column;
+}
+.book_card{
+    max-width: 100%;
+    padding: 10px;
+}
+.book_card>div{
+    margin: 5px;
+}
+.book_card>div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.status{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15%;
+}
+.status p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.status button{
+    /* margin-top: 10px; */
+}
+.i_con{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    color: #80CBC4;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.m_card {
+    background-color: #FAD65B;
+    color: #1A2930;
+}
+.sTime{
+    margin: 10% 0;
+}
+
+/* send_card */
+.send_card{
+    background-color:white;
+    color: white;
+    border-radius: 5px;
+    padding: 3%;
+    pointer-events: all;
+}
+.send_card h3{
+    color: #80CBC4;
+    margin: 10px 0;
+}
+.list_close { 
+    color: #1A2930;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 2rem;
+}
+.card_main{
+    clear: both;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color:#1A2930 ;
+    font-weight: 600;
+    
+}
+.card_img{
+    width: 300px;
+    margin-right: 10%;
+}
+.card_img img{
+    width: 100%;
+    
+}
+.card_body{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 3px solid white;
+    padding-left: 3%;
+}
+.card_body p,.msg p{
+    margin: 10px 0;
+}
+.card_body span{
+    margin: 10px 0;
+    font-size: 0.9rem;
+    background-color: #80CBC4;
+    padding: 5px;
+    color: #1A2930;
+    border-radius: 2px;
+}
+.text_content{
+   padding: 1%;
+   background-color: #CECDCB;
+   text-align: center;
+}
+.msg{
+    color:#1A2930 ;
+    text-align: start;
+    margin: 0 5px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.msg p{
+    background-color: white;
+    padding: 1%;
+    border-radius: 5px;
+}
+.omsg{
+    width: 60%;
+}
+form .btn{
+    width: 30%;
+    display: inline-block;
+    margin: 5px;
+}
+.form-control{
+    display: inline-block;
+}
+
+
+/* rwd */
+
+@media screen and (max-width: 768px){
+    .project{
+        max-width: 100%;
+        /* text-align: center; */
+    }
+    .status{
+        display: block;
+    }
+    .sTime{
+        width: auto;
+        margin-right: 0px;
+    }
+    .card_Title p span {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+}
+ @media screen and (max-width: 414px){
+    .project{
+                flex-direction: column;
+            }
+            .i_con{
+                justify-content: center;
+            }
+            .status{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+            }
+}
